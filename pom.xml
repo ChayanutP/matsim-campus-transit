@@ -21,7 +21,7 @@
 
 		<!-- Don't change version here, but in the parent section above! -->
 		<matsim.version>${parent.version}</matsim.version>
-        <main.class>org.matsim.project.RunMatsimModelImplementation</main.class>
+        <main.class>org.matsim.ku.RunKuShuttle</main.class>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -187,7 +187,7 @@
 							<goal>shade</goal>
 						</goals>
 						<configuration>
-							<outputFile>${project.basedir}/${project.build.finalName}.jar</outputFile>
+							<outputFile>${project.build.directory}/${project.build.finalName}.jar</outputFile>
 							<transformers>
 								<!-- The following sets the main class for the executable jar as you otherwise would with the assembly plugin -->
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
