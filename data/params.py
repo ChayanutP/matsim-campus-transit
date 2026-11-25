@@ -6,8 +6,8 @@ CRS = "EPSG:32647"          # UTM zone 47N สำหรับประเทศ�
 # ---------- ประเภทรถ ----------
 VEHICLE_TYPES = {
     #                  นั่ง  ยืน   ยาว(m)  pce
-    "large_diesel":   dict(seats=35, standing=0,  length=10.0, pce=3.0),
-    "large_electric": dict(seats=38, standing=0,  length=10.0, pce=3.0),
+    "large_diesel":   dict(seats=21, standing=14,  length=10.0, pce=3.0),
+    "large_electric": dict(seats=20, standing=18,  length=10.0, pce=3.0),
     "small":          dict(seats=22, standing=0,  length=6.5,  pce=2.0),
 }
 
