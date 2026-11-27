@@ -26,7 +26,7 @@
   <module name="controller">
     <param name="outputDirectory" value="./output/base"/>
     <param name="firstIteration" value="0"/>
-    <param name="lastIteration" value="20"/>
+    <param name="lastIteration" value="5"/>   <!-- ควรเป็น 20 เพื่อให้ลู่เข้าสมดุลเต็มที่ แต่จะใช้เวลานานกว่า -->
     <param name="overwriteFiles" value="deleteDirectoryIfExists"/>
     <param name="writeEventsInterval" value="10"/>
     <param name="writePlansInterval" value="10"/>

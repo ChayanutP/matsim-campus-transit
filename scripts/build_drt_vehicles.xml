@@ -1,0 +1,12 @@
+<vehicles>
+  <vehicle id="drt_1" startLink="loop_W1">
+    <t_0>  7:00:00</t_0>
+    <t_1> 20:00:00</t_1>
+    <capacity>35</capacity>
+  </vehicle>
+  <vehicle id="drt_2" startLink="loop_E1_BTS">
+    <t_0>  7:00:00</t_0>
+    <t_1> 20:00:00</t_1>
+    <capacity>22</capacity>
+  </vehicle>
+</vehicles>

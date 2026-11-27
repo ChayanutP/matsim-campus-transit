@@ -52,7 +52,7 @@ for i in range(P.N_PT_USERS):
         while d == prev:                       # ไม่ให้คาบติดกันอยู่ที่เดิม
             d = random.choices(dests, dest_w)[0]
         prev = d
-        body.append('      <leg mode="pt"/>')
+        body.append('      <leg mode="drt"/>') # ex drt / pt
         leg_count += 1
         t = t + P.CLASS_DURATION_MIN * 60 + jitter(P.DEPART_JITTER_MIN)
         last = (c == n_class - 1)

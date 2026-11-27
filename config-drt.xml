@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <module name="global">
+    <param name="coordinateSystem" value="EPSG:32647"/>
+  </module>
+
+  <module name="network">
+    <param name="inputNetworkFile" value="input/network.xml.gz"/>
+  </module>
+
+  <module name="plans">
+    <param name="inputPlansFile" value="input/population-drt.xml.gz"/>
+  </module>
+
+  <!-- DRT config -->
+  <module name="multiModeDrt">
+    <parameterset type="drt">
+      <param name="mode" value="drt"/>
+      <param name="maxWaitTime" value="600"/>      <!-- 10 นาที -->
+      <param name="maxTravelTimeBeta" value="300"/>
+      <param name="stopDuration" value="30"/>
+      <param name="vehiclesFile" value="input/drt-vehicles.xml"/>
+      <param name="operationalScheme"
+             value="stopbased"/>
+      <param name="transitStopFile"
+             value="input/transitSchedule.xml.gz"/>
+    </parameterset>
+  </module>
+
+  <module name="dvrp">
+    <param name="networkModes" value="drt"/>
+  </module>
+
+  <module name="controller">
+    <param name="outputDirectory" value="./output/drt-base"/>
+    <param name="lastIteration" value="20"/>
+    <param name="compressionType" value="gzip"/>
+  </module>
+
+  <module name="qsim">
+    <param name="startTime" value="06:00:00"/>
+    <param name="endTime" value="23:00:00"/>
+    <param name="numberOfThreads" value="4"/>
+  </module>
+</config>
